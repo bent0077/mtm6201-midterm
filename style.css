@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Purple+Purse&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Purple Purse', cursive;
+}
+
+  /****Homepage starts here****/
+  .homebody{
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(images/cakelady.png) no-repeat ;
+    background-size: cover;
+}
+
+  .hometext{
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.hometext h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hometext p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        float: none;
+        width: 50%;
+        text-align: center;
+        margin:auto;
+    margin-bottom: 5px;
+    }
+    .menu{
+        float: none;
+        margin-top: 0;
+    }
+    .menu li a{
+        color: black;
+    text-decoration: none ;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Purple Purse', cursive;
+    }
+    .hometext{
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        margin: 10% px;
+        text-align: center;
+    }
+    .hometext h1{
+        font-size: 25px;
+        color: rgb(3, 3, 3);
+        padding-bottom: 20px;
+    }
+    .hometext p{
+        font-size: 15px;
+    }
+    .menu {
+        z-index: 2000;
+        position: relative;
+    }
+    }
+
+/**About page starts here**/
+
+/** menu css starts here**/
+.navbar{
+    width:100%;
+    margin:auto;
+}
+/***** navbar is set to the right with padding on top and side****/
+.menu{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+/***** navbar is vertical****/
+.menu li{
+    display: inline-block;
+}
+/***** menu's colour,spacing, boldness,size and other properties.****/
+.menu li a{
+  color: black;
+    text-decoration: none ;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Purple Purse', cursive;
+}
+/***** menu turns pink when hovered over words. ****/
+.menu li a:hover{
+    background:rgb(255, 255, 255);
+    color: rgb(255, 152, 152);
+}
+/***** logo to the left with other properties like size, font, and spacing  ****/
+.logo{
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/***** about section text is in the center and aligned to the left of image. fit with in screen length ****/
+.about{
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+/***** about section text is in the center and aligned to the left of image. fit with in screen length ****/
+.about .aboutcontent img{
+height: auto;
+width: 600px;
+max-width: 100%;
+}
+/***** about section text is  ****/
+.abouttext{
+    width: 380px;
+    max-width: 100;
+    padding: 0px 10px;
+}
+ /***** about section text is in the center and aligned to the left of image. fit with in screen length ****/
+.aboutcontent{
+    width:  1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+/***** customization of main text headers and paragraph ****/
+.abouttext h1{
+    color:black;
+    font-size:45px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-family: 'Purple Purse', cursive;
+}
+.abouttext h5{
+    color: black;
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing:2px;
+    font-family: 'Purple Purse', cursive;
+}
+.abouttext p{
+    color:black;
+   font-size:rgb(0, 0, 0);
+   margin-bottom: 45px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+/***** customization of text ends ****/
+/**** Button properties font, sizing ,colour, border roundness etc*****/
+Button{
+    background-color:rgb(253, 203, 203);
+    color: black;
+    border:2px solid transparent;
+    text-decoration: none;
+    padding:10px 30px ;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight:bold;
+    font-family: 'Sansita Swashed', cursive;
+}
+/**** Button turns tranparent,bigger and black when hovered over*****/
+button:hover{
+    transform:scale(1.3) ;
+    background-color: transparent;
+    border: 2px solid;
+    color: black;
+    translate:0.4s;
+    cursor: pointer;
+}
+@media screen and (min-width:1000) {
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 0px 0px;
+    }  
+    
+  }
+  @media screen and (max-width:1024px){
+      .about .aboutcontent img{
+          margin-bottom: 20px;
+          margin-top: 50px;
+          height: 450px;
+          width: auto;
+          max-width: 100%;
+      }
+      .abouttext h1{
+          font-size:  40px; ;
+         
+      }
+      .menu {
+        z-index: 2000;
+        position: relative;
+      }
+  }
+  /****About page stops here****/
+   
+
+  /****contact page starts here****/
+  
+  /****Navigation bar starts here(same navbar contents above different just different naming componets****/
+  .navbarcontact{
+    width:100%;
+    margin:auto;
+}
+.contactnavigation {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    }
+.menucontact{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.menucontact li{
+    display: inline-block;
+}
+.menucontact li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none ;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Purple Purse', cursive;
+}
+.menucontact li a:hover{
+    background:rgb(255, 255, 255);
+    color: rgb(255, 177, 177);
+    border-radius: 10px;
+}
+.logocontact{
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/****navbar ends here****/
+  .contactbody{
+    min-height: 100vh;
+    background: url(images/desing.png);
+    background-size: cover;
+    display:flex ;
+    justify-content: center;
+    align-items:center;
+}
+.contactsection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.contactinfo{
+color: rgb(0, 0, 0);
+max-width: 500px;
+line-height: 65px;
+padding-left: 50px;
+font-size: 20px;
+margin-right: 50px;
+}
+.contactinfo i{
+  margin-right: 20px;  
+  font-size: 25px;
+}
+
+.contactform{
+    max-width: 700px;
+    margin-right: 50px;
+}
+.contactinfo .contactform{
+    flex: 1;
+}
+.contactform h2{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: 'Purple Purse', cursive;
+}
+.contactform .textbox{
+    background: rgb(255, 255, 255);
+    color: black;
+    border:none;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgb(0, 0, 0);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+.contactform .textbox:first-child{
+    margin-right: 15px;
+   
+}
+.contactform textarea{
+    background: rgb(255, 255, 255);
+    color: rgb(6, 7, 7);
+    border:none;
+    width: 100%;
+    padding:12px;
+    font-size: 15px; 
+    min-height: 200px;
+    max-height: 400px; 
+    box-shadow:0 1px 1px black;
+    margin-bottom:20px ;
+    opacity: 0.9;
+
+}
+.contactform .sendbtn{
+    float: right;
+    background:pink ;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property:background;
+    cursor: pointer;
+    font-family: 'Purple Purse', cursive;
+}
+.contactform .sendbtn:hover{
+    transform:scale(1.3) ;
+    background-color: transparent;
+    border: 2px solid;
+    color: rgb(0, 0, 0);
+    translate:.4s;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1178px)  {
+    .contactsection{
+        flex-direction:column;
+    }
+    .contactinfo .contactform{
+        margin: 30px 50px;
+    }
+    .contactform h2{
+        font-size: 30px;
+        
+    }
+    .contactform .textbox{
+        width: 100%;
+        margin-left: 30px;
+    }
+    .contactform textarea{
+        margin-left: 30px;
+}
+}
