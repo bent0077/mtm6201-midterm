@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Purple+Purse&display=swap');
+
+/*******set up for all the documents ****/
 *{
     padding: 0px;
     margin: 0px;
@@ -7,7 +9,7 @@
     font-family: 'Purple Purse', cursive;
 }
 
-  /****Homepage starts here****/
+  /****Homepage starts here**********************************************************************************************************************************/
   .homebody{
     font-family: Arial, Helvetica, sans-serif;
     background:url(images/cakelady.png) no-repeat ;
@@ -76,7 +78,7 @@
     }
     }
 
-/**About page starts here**/
+/***************************************************************************************About page starts here**/
 
 /** menu css starts here**/
 .navbar{
@@ -223,7 +225,7 @@ button:hover{
   /****About page stops here****/
    
 
-  /****contact page starts here****/
+  /****contact page starts here**************************************************************************************************************************/
   
   /****Navigation bar starts here(same navbar contents above different just different naming componets****/
   .navbarcontact{
